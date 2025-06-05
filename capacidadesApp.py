@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 
 # ---------------- CONFIGURACIÓN ----------------------- #
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EXCEL_PATH = os.path.join(BASE_DIR, "db", "Pregrado", "Pregrado PA 2025.xlsx")
+EXCEL_PATH = os.path.join(BASE_DIR, "db", "pregrado", "Pregrado PA 2025.xlsx")
 PERIODO = "202520"
 
 AULAS = [

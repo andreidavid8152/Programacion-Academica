@@ -6,15 +6,16 @@
 import pandas as pd
 import streamlit as st
 import plotly.graph_objects as go
-import numpy as np
+import os
 
 # ─────────── Primera instrucción Streamlit ─────────── #
 st.set_page_config(layout="wide")
 # ----------------------------------------------------- #
 
 # ---------------- CONFIGURACIÓN ----------------------- #
-EXCEL_PATH = "db/Pregrado/Pregrado PA 2025.xlsx"
-PERIODO    = "202520"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+EXCEL_PATH = os.path.join(BASE_DIR, "db", "Pregrado", "Pregrado PA 2025.xlsx")
+PERIODO = "202520"
 
 AULAS = [
     "UPE/417", "UPE/424", "UPO/415", "UPO/410", "UPO/309", "UPO/414",
